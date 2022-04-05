@@ -22,7 +22,7 @@ seed(1)
 tf.random.set_seed(1)
 
 n_timestamp = 10
-n_epochs = 10
+n_epochs = 50
 # ====================================
 #      model type：
 #            1. single-layer LSTM
@@ -138,7 +138,7 @@ plt.figure(figsize=(10, 6))
 # print('yuan_real', yuan_real_stock_price1)
 plt.plot(yuan_data.loc['2021-06-22':, 'close'], label='Stock Price')
 plt.plot(finalpredicted_stock_price['close'], label='Predicted Stock Price')
-plt.title('ARIMA+LSTM: Stock Price Prediction')
+plt.title('BiLSTM: Stock Price Prediction')
 plt.xlabel('Time', fontsize=12, verticalalignment='top')
 plt.ylabel('Close', fontsize=14, horizontalalignment='center')
 plt.legend()
