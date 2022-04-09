@@ -13,6 +13,8 @@ keras==2.3.1
 xgboost==1.5.0
 ```
 
+The stock data used in this repository was downloaded from [TuShare](https://tushare.pro/). The stock data on [TuShare](https://tushare.pro/) are with public availability.
+
 ## Usage
 
 Firstly, run `ARIMA.py` for pre-processing step by ARIMA model. Then, run the neural network or XGBoost models.
